@@ -73,6 +73,15 @@ body h1 {
 .fixed-page-border-cover.bottom {
     bottom: 0px;
 }
+
+
+#anim {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+
+
 /************************************************************MENU*********************************************/
 .sidebar {
     position: fixed;
