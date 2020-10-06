@@ -6,7 +6,7 @@ html {
 }
 body {
     font-family: 'Muli', sans-serif;
-    font-size:140%;
+    font-size:130%;
 	color: #000000;
 	background-color: #8DB9E4;
 	height: calc(100% - 100px);
@@ -75,10 +75,22 @@ body h1 {
 }
 
 
-#anim {
-            max-width:70%;  
-            margin: 0 auto;
-        }
+/******INDEX******/
+
+.relative-parent {
+  position:relative;
+}
+.hiding-parent {
+  overflow:hidden;
+}
+#anim {           
+	position: absolute;
+	width: 68%;	
+	margin: 4% 0 0 16%;	
+    
+}
+
+
 /************************************************************MENU*********************************************/
 .sidebar {
     position: fixed;
@@ -226,8 +238,8 @@ body h1 {
 
 #content  {
 	position: absolute;
-	width: 75%;	
-	margin: 80px 10%;	
+	width: 70%;	
+	margin: 80px 12%;	
 }
 footer {
 	position: fixed;
@@ -256,7 +268,10 @@ footer img {
     width: 30%;
 }
 #picture img {
-    width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
 }
 
  #description {
@@ -289,9 +304,9 @@ footer img {
     margin:2% 0 0 2%;
     padding:0;
     list-style:none inside;
-     columns: 2;
+  /*****   columns: 2;
   -webkit-columns: 2;
-  -moz-columns: 2;
+  -moz-columns: 2;***/
 }
 
 .izq {
@@ -299,6 +314,7 @@ footer img {
     clear: none;
     float: left;
     width: 48%;
+    margin: 1% 1%;
 }
 
 .der {
@@ -308,11 +324,16 @@ footer img {
     width: 48%;
     margin: 1% 1%;
 }
-.next {
-    float: right;
-    text-align: right;
-}
 
+#arrow1 {
+    transform: rotate(90deg);
+    width: 25%;
+}
+#arrow2 {
+    transform: rotate(-90deg);
+    width: 25%;
+    float: right;
+}
 /**************************************************REELS*******************************************************/
 .container {
   position: relative;
@@ -339,9 +360,17 @@ footer img {
 		overflow: auto;
 	}
 	body {    
-    font-size:180%;
+    font-size:180%;       
+        
 	
 }
+    #anim {           
+	position: absolute;
+	width: 100%;	
+	margin: 20% 0 0 0;	
+    
+}
+
 
 
 }
